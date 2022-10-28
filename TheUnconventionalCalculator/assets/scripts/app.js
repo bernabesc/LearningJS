@@ -1,9 +1,11 @@
-let currentResult = 0;
+let defualtResult = 0;
+let currentResult = defualtResult;
+
+addBtn.addEventListener('click', add);
 
 
-currentResult += 10;
 
-let calDescription = `(0 + ${currentResult})`;
-
-
-outputResult(currentResult,calDescription);
+function add(num1, num2){
+    currentResult = currentResult + userInput.value;
+    outputResult(currentResult,'');
+}
